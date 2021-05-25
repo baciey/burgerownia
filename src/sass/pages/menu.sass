@@ -1,0 +1,63 @@
+
+.menu-container
+  width: 100%
+  .image-container
+    position: relative
+    width: 100%
+    .image 
+      width: 100%
+  .text-on-image
+    color: white
+    letter-spacing: 2px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &__heading
+      font-family: $fancyFontFamily
+      font-size: pxToRem(70)
+      font-weight: normal
+    &__subheading
+      font-size: pxToRem(20)
+  .text-on-page
+    margin-top: 0
+  .menu-main
+    max-width: 400px
+    margin: auto
+    padding-bottom: 100px
+    background-color: #fff
+    position: relative
+    .title
+      padding: 50px
+      text-transform: uppercase
+      letter-spacing: 2px
+      font-weight: bolder
+      text-align: center
+    .product
+      width: 90%
+      margin: auto
+      margin-top: 20px
+      .name-and-price
+        border-bottom: 1px dotted $colorGolden
+        display: flex
+        justify-content: space-between
+        padding: 10px 0px 10px 0px
+        span:first-child
+          font-weight: bold
+          letter-spacing: 1px
+        span:last-child
+          color: $colorGrey
+          font-weight: bold
+          font-size: 14px
+      .ingredients
+        text-align: left
+        padding: 10px 0px 10px 0px
+        color: $colorGrey
+        font-size: 14px
+  
+
+
+@media ( min-width: 600px )
+  .menu-container 
+    .menu-main
+      top: -100px

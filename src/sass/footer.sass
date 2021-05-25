@@ -1,0 +1,51 @@
+
+.footer
+  background-color: $colorAlmostWhite
+  padding: 20px
+  text-align: center
+  padding-top: 100px
+  padding-bottom: 100px
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  box-sizing: border-box
+  .single-branch-data
+    width: 250px
+    .title
+      margin: 20px
+      font-size: pxToRem(18)
+
+    .opening-hours
+      display: flex
+      justify-content: space-between
+      font-size: pxToRem(12)
+      color: $colorGrey
+      letter-spacing: 1px
+    .row
+      color: black
+      letter-spacing: 0px
+      font-weight: bold
+      margin-top: 10px
+  .copyrights
+    background-color: $colorGrey
+    color: #fff
+    padding: 10px
+    width: calc(100% - 20px)
+    position: absolute
+    bottom: 0
+    left: 0
+    display: flex
+    justify-content: center
+    font-size: pxToRem(12)
+
+
+
+
+@media ( min-width: 600px )
+  .footer
+    flex-direction: row
+    align-items: stretch
+    justify-content: center
+    .single-branch-data
+      margin: 15px

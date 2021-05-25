@@ -1,0 +1,102 @@
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+html
+  font-size: 14px
+body
+  font-family: 'Lato', sans-serif
+
+.page-container
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.page-content-container
+  padding-bottom: 200px
+
+.text-on-page
+  text-align: center
+  display: flex
+  justify-content: center
+  &--bgc-white
+    background-color: #fff
+  &--bgc-transparent
+    background-color:  transparent
+    color: #fff
+    .text-on-page__text
+      background-color: rgba(0, 0, 0, .5)
+      padding: 20px
+      margin-top: 30px
+      color: #fff
+  &--bgc-grey
+    background-color: $colorGrey
+    color: #fff
+    .text-on-page__text
+      color: #fff
+
+  &__wrapper
+    width: 90%
+    max-width: 400px
+    margin: 30px 0px
+    line-height: 1.5
+  &__heading
+    margin-bottom: 10px
+    font-weight: bold
+    font-size: pxToRem(25)
+  &__subheading
+    font-size: pxToRem(35)
+    font-family: $fancyFontFamily
+    color: $colorGolden
+  &__text
+    padding-bottom: 40px
+    color: $colorGrey
+    font-size: pxToRem(16)
+.bg-image-container
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  .bg-image
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-width: 100%
+    min-height: 100%
+    z-index: -1
+  .text-on-page
+    margin-top: 0
+.full-width
+  width: 100%
+
+.desc
+  padding: 20px
+  h3
+    margin: 20px
+  p
+    margin: 10px
+  ul
+    text-align: left
+
+
+@media ( min-width: 1024px )
+  .page-container
+    flex-direction: row
+    flex-wrap: wrap
+  .page-content-container
+    width: calc(100% - 300px)
+    position: relative
+    left: 300px
+    display: flex
+    justify-content: center
+  .footer
+    width: calc(100% - 300px)
+    position: relative
+    left: 300px
+@media (min-width: 1024px)
+  html
+    font-size: 16px
+@media (min-width: 1366px)
+  html
+    font-size: 18px

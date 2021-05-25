@@ -1,0 +1,156 @@
+
+.nav
+  height: $navHeight
+  width: 100%
+  background-color: #f7f7f7
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 1px
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  a
+    color: black
+    &:hover
+      color: $colorGolden
+  .top-bar
+    height: $navHeight
+    .menu-icon
+      position: absolute
+      top: 50%
+      left: 20px
+      transform: translateY(-50%)
+      cursor: pointer
+      height: 30px
+      width: 30px
+    .menu-home
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      p:first-child
+        font-family: 'Notable', sans-serif
+      p:last-child
+        font-size: 8px
+        display: flex
+        justify-content: space-around
+    .line
+      position: absolute
+      left: 2.5px
+      width: 25px
+      height: 2px
+      background-color: black
+    .line:nth-child(1)
+      top: 25%
+    .line:nth-child(2)
+      top: 50%
+    .line:nth-child(3)
+      top: 75%
+
+    .line:nth-child(1).active
+      animation: $menuIconAnimationTime linear line-1 0s 1 forwards
+    .line:nth-child(2).active
+      animation: $menuIconAnimationTime linear line-2 0s 1 forwards
+    .line:nth-child(3).active
+      animation: $menuIconAnimationTime linear line-3 0s 1 forwards
+
+    .line:nth-child(1).inactive
+      animation: $menuIconAnimationTime linear line-1-back 0s 1 forwards
+    .line:nth-child(2).inactive
+      animation: $menuIconAnimationTime linear line-2-back 0s 1 forwards
+    .line:nth-child(3).inactive
+      animation: $menuIconAnimationTime linear line-3-back 0s 1 forwards
+
+    @keyframes line-1
+      0%
+        top: 25%
+      50%
+        top: 75%
+        transform: rotate(0deg)
+      100%
+        top: 50%
+        transform: rotate(-45deg)
+    @keyframes line-2
+      0%
+        top: 50%
+      50%
+        top: 75%
+        transform: rotate(0deg)
+      100%
+        top: 50%
+        transform: rotate(45deg)
+    @keyframes line-3
+      0%
+        opacity: 1
+      50%
+        opacity: 1
+      51%
+        opacity: 0
+      100%
+        opacity: 0
+    @keyframes line-1-back
+      0%
+        transform: rotate(-45deg)
+        top: 50%
+      50%
+        top: 75%
+        transform: rotate(0deg)
+      100%
+        top: 25%
+    @keyframes line-2-back
+      0%
+        top: 50%
+        transform: rotate(45deg)
+      50%
+        top: 75%
+        transform: rotate(0deg)
+      100%
+        top: 50%
+    @keyframes line-3-back
+      0%
+        opacity: 0
+      50%
+        opacity: 0
+      51%
+        opacity: 1
+      100%
+        opacity: 1
+  .slide-menu
+    background-color: white
+  ul
+    padding: 20px
+    list-style-type: none
+    width: calc(100% - 40px)
+    transition: 0.5s linear
+    display: none
+
+    li
+      margin: 10px
+      margin-top: 20px
+      border-bottom: 1px dotted lightgrey
+      padding-bottom: 10px
+  ul.active
+    transition: 0.5s linear
+    display: unset
+.nav-background
+  height: $navHeight
+  visibility: hidden
+
+
+@media ( min-width: 1024px )
+  .nav
+    width: 300px
+    height: 100%
+    // opacity: 0.7
+    .slide-menu
+      background-color: $colorAlmostWhite
+      ul 
+        display: block
+        li:first-child
+          text-align: center
+        li
+          margin-top: 10px
+          border-bottom: 1px dotted lightgrey
+          padding-bottom: 10px
+

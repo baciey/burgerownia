@@ -1,0 +1,72 @@
+{
+    "grill": [
+        {
+            "id": 0,
+            "name": "Grillowana pierś z kurczaka",
+            "price": 29.00,
+            "ingredients": "Grillowana pierś z kurczaka, podawana z masłem czosnkowym, frytkami, mixem sałat i dipem paprykowym"
+        },
+        {
+            "id": 1,
+            "name": "Grillowany stek z karkówki",
+            "price": 31.00,
+            "ingredients": "Grillowana karkówka marynowana w ziołach, podawana z masłem czosnkowym, frytkami, mixem sałat i dipem paprykowym"
+        }
+    ],
+    "sandwiche": [
+        {
+            "id": 0,
+            "name": "Cheese",
+            "price": 27.00,
+            "ingredients": "Bułka, panierowany ser Gouda (180g), sałata lodowa, sos tatarski"
+        },
+        {
+            "id": 1,
+            "name": "Chickien",
+            "price": 27.00,
+            "ingredients": "Bułka, pierś z kurczaka panierowana w nachos (180g), ser Cheddar, sałata, pomidor, cebula, jalapeño, sos majonezowy"
+        }
+    ],
+    "burgery": [
+        {
+            "id": 0,
+            "name": "Chef",
+            "price": 30.00,
+            "ingredients": "Bułka, kotlet wołowy (180g), chrupiący bekon, ser Cheddar, jalapeño, konfitura z cebuli, nachosy, sos BBQ, sos majonezowy"
+        },
+        {
+            "id": 1,
+            "name": "Klasyk",
+            "price": 26.00,
+            "ingredients": "Bułka, kotlet wołowy (180g), ogórek kiszony, pomidor, sałata, cebula, sos majonezowy"
+        }
+    ],
+    "pizza": [
+        {
+            "id": 0,
+            "name": "PROSCIUTTO",
+            "price": 28.00,
+            "ingredients": "Sos śmietanowy, Mozzarella, świeży czosnek, szpinak baby, szynka prosciutto, pomidorki cherry"
+        },
+        {
+            "id": 1,
+            "name": "HAWAJSKA",
+            "price": 26.00,
+            "ingredients": "Sos pomidorowy, Mozzarella, szynka, ananas"
+        }
+    ],
+    "napoje": [
+        {
+            "id": 0,
+            "name": "Herbata",
+            "price": 6,
+            "ingredients": ""
+        },
+        {
+            "id": 1,
+            "name": "Kawa",
+            "price": 7.00,
+            "ingredients": ""
+        }
+    ]
+}

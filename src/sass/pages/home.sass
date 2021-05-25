@@ -1,0 +1,31 @@
+.home-container
+  .bg-image-container
+    .bg-image
+      filter: brightness(0.5)
+    .text-on-page
+      position: fixed
+      top: 50% 
+      left: 50%
+      transform: translate(-50%, -50%)
+      text-align: center
+      color: white
+      z-index: -1
+      &__heading
+        font-size: pxToRem(35)
+      &__subheading
+        font-size: pxToRem(35)
+        font-family: $fancyFontFamily
+      &__text
+        font-size: 1rem
+        color: #fff
+  .text-on-page
+    margin-top: 0
+    margin-bottom: 300px
+@media ( min-width: 1024px )
+  .home-container
+    .bg-image-container
+      .text-on-page
+        left: calc(50% + 150px)
+        
+  
+

@@ -1,0 +1,38 @@
+.about-container
+  width: 100%
+  .bg-image-container
+    .text-on-page
+      margin-top: 0
+      margin-bottom: 0
+  .text-on-page
+    margin-top: 0
+    margin-bottom: 300px
+  .text-on-page.with-image
+    background-color: #fff
+    text-align: left
+    padding: 50px 20px
+    display: flex
+    flex-direction: column
+    .text-on-page__wrapper
+      max-width: none
+    .text-on-page__heading
+      text-transform: uppercase
+      letter-spacing: 2px
+      color: black
+    .image-container
+      display: flex
+      flex-direction: column
+      justify-content: center
+      img
+        width: 100%
+
+@media ( min-width: 728px )
+  .about-container
+    .text-on-page.with-image
+      flex-direction: row
+      .text-on-page__wrapper
+        flex-basis: 50%
+      .text-on-page__text
+        padding-right: 20px
+      .image-container
+        flex-basis: 50%
